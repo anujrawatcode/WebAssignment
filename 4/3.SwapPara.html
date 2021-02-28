@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>JavaScript</title>
+
+</head>
+
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati dicta vero qui eaque amet
+        recusandae cum ab nulla sequi minus illo, nesciunt commodi cupiditate. Voluptatem dicta laudantium culpa error
+        aliquam dolores.</p>
+    <p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quod aut in enim, hic ut ipsum
+        quo adipisci, atque ad laboriosam similique, ipsa debitis suscipit dignissimos asperiores provident esse error?
+        Pariatur architecto rerum totam. Maiores commodi excepturi odit veritatis doloremque exercitationem quo
+        provident.</p>
+    <button onclick="swapText()">Change</button>
+
+    <script>
+        function swapText() {
+            p1 = document.getElementsByClassName('p1')[0];
+            p2 = document.getElementsByClassName('p2')[0];
+            temp = p1.textContent;
+            p1.textContent = p2.textContent;
+            p2.textContent = temp;
+        }
+    </script>
+</body>
+
+</html>
