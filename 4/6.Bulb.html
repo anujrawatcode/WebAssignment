@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bulb On Off</title>
+    
+    <script> function bulbon() {
+            document.getElementById("bulb").src = "/4/images/bulb_on.gif";
+            document.getElementById("bulbstatus").element.innerHTML = "Bulb in On Now!";
+        }
+        function bulboff() {
+            document.getElementById("bulb").src = "/4/images/bulb_off.gif";
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 id="bulbstatus">Bulb On Off in JavaScript</h1>
+        <img id="bulb" src="/4/images/bulb_off.gif"> <input type="button" class="myButton" value="Bulb On"
+            onclick="bulbon()">
+        <input type="button" class="myButton1" value="Bulb Off" onclick="bulboff()">
+    </div>
+</body>
+
+</html>
